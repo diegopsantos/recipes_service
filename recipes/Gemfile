@@ -1,0 +1,24 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+
+ruby '2.7.1'
+
+# Classy web-development dressed in a DSL (official / canonical repo)
+gem 'sinatra'
+
+gem 'puma'
+
+# Ruby SDK for the Contentful Content Delivery API and Content Preview API
+gem 'contentful'
+
+# A Ruby gem to load environment variables from `.env`.
+gem 'dotenv'
+
+group :test, :development do
+  gem 'rubocop'
+  gem 'pry-byebug'
+  gem 'rspec'
+end

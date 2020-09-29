@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  recipes-service:
+    build:
+      context: ./recipes
+    environment:
+      CONTENTFUL_SPACE_ID:
+      CONTENTFUL_ACCESS_TOKEN:
+    ports:
+      - 3000:3000
