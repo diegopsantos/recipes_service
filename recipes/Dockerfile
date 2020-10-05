@@ -10,7 +10,7 @@ RUN apk add --update --no-cache \
     gem install bundler --no-document && \
     rm -rf /var/cache/apk/*
 
-COPY Gemfile Gemfile.lock /recipes/
+COPY Gemfile* /recipes/
 
 RUN bundle install && \
     rm -rf /var/cache/apk/*

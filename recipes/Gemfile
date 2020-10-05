@@ -9,6 +9,8 @@ ruby '2.7.1'
 # Classy web-development dressed in a DSL (official / canonical repo)
 gem 'sinatra'
 
+gem "sinatra-param", require: "sinatra/param"
+
 gem 'puma'
 
 # Ruby SDK for the Contentful Content Delivery API and Content Preview API
@@ -17,8 +19,13 @@ gem 'contentful'
 # A Ruby gem to load environment variables from `.env`.
 gem 'dotenv'
 
+gem 'sinatra-flash'
+
 group :test, :development do
-  gem 'rubocop'
   gem 'pry-byebug'
   gem 'rspec'
+  gem 'shoulda-matchers'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'rack-test', '~> 1.1'
 end

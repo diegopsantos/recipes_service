@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cdn.contentful.com/spaces/kk2bw5ojx476/environments/master/entries?content_type=recipe&limit=2&select=fields.title,fields.photo,fields.tags,fields.description,fields.chef,sys&skip=2
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Contentful-User-Agent:
+      - sdk contentful.rb/2.15.4; platform ruby/2.7.1; os macOS/19;
+      Authorization:
+      - "<SENSITIVE_DATA>"
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - close
+      Host:
+      - cdn.contentful.com
+      User-Agent:
+      - http.rb/4.4.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '1849'
+      Access-Control-Allow-Headers:
+      - Accept,Accept-Language,Authorization,Cache-Control,Content-Length,Content-Range,Content-Type,DNT,Destination,Expires,If-Match,If-Modified-Since,If-None-Match,Keep-Alive,Last-Modified,Origin,Pragma,Range,User-Agent,X-Http-Method-Override,X-Mx-ReqToken,X-Requested-With,X-Contentful-Version,X-Contentful-Content-Type,X-Contentful-Organization,X-Contentful-Skip-Transformation,X-Contentful-User-Agent,X-Contentful-Enable-Alpha-Feature
+      Access-Control-Allow-Methods:
+      - GET,HEAD,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Etag
+      Access-Control-Max-Age:
+      - '86400'
+      Cf-Environment-Id:
+      - master
+      Cf-Environment-Uuid:
+      - 3e111988-d2b3-4647-a0a8-ed1215cbd839
+      Cf-Organization-Id:
+      - 0OxgeKaTWSWzTukWE0scEe
+      Cf-Space-Id:
+      - kk2bw5ojx476
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Contentful-Api:
+      - cda_cached
+      Etag:
+      - W/"5674633010588016013"
+      Server:
+      - Contentful
+      X-Content-Type-Options:
+      - nosniff
+      X-Contentful-Region:
+      - us-east-1
+      X-Contentful-Route:
+      - "/spaces/:space/environments/:environment/entries"
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 04 Oct 2020 23:57:17 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '31282'
+      X-Served-By:
+      - cache-gru17120-GRU
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Contentful-Request-Id:
+      - a464d9b2-d813-49b3-a0ea-d956bcc607b6
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+  recorded_at: Sun, 04 Oct 2020 23:57:17 GMT
+recorded_with: VCR 6.0.0
