@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cdn.contentful.com/spaces/kk2bw5ojx476/environments/master/entries?content_type=recipe&select=fields.title,fields.photo,fields.tags,fields.description,fields.chef,sys&sys.id=4dT8tcb6ukGSIg2YyuGEOm
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Contentful-User-Agent:
+      - sdk contentful.rb/2.15.4; platform ruby/2.7.1; os macOS/19;
+      Authorization:
+      - "<SENSITIVE_DATA>"
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - close
+      Host:
+      - cdn.contentful.com
+      User-Agent:
+      - http.rb/4.4.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '1142'
+      Access-Control-Allow-Headers:
+      - Accept,Accept-Language,Authorization,Cache-Control,Content-Length,Content-Range,Content-Type,DNT,Destination,Expires,If-Match,If-Modified-Since,If-None-Match,Keep-Alive,Last-Modified,Origin,Pragma,Range,User-Agent,X-Http-Method-Override,X-Mx-ReqToken,X-Requested-With,X-Contentful-Version,X-Contentful-Content-Type,X-Contentful-Organization,X-Contentful-Skip-Transformation,X-Contentful-User-Agent,X-Contentful-Enable-Alpha-Feature
+      Access-Control-Allow-Methods:
+      - GET,HEAD,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Etag
+      Access-Control-Max-Age:
+      - '86400'
+      Cf-Environment-Id:
+      - master
+      Cf-Environment-Uuid:
+      - 3e111988-d2b3-4647-a0a8-ed1215cbd839
+      Cf-Organization-Id:
+      - 0OxgeKaTWSWzTukWE0scEe
+      Cf-Space-Id:
+      - kk2bw5ojx476
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Contentful-Api:
+      - cda_cached
+      Etag:
+      - W/"14927382792831585635"
+      Server:
+      - Contentful
+      X-Content-Type-Options:
+      - nosniff
+      X-Contentful-Region:
+      - us-east-1
+      X-Contentful-Route:
+      - "/spaces/:space/environments/:environment/entries"
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 04 Oct 2020 23:57:18 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '28206'
+      X-Served-By:
+      - cache-gru17149-GRU
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '2'
+      Vary:
+      - Accept-Encoding
+      X-Contentful-Request-Id:
+      - 455dfb07-b6b0-44a3-b5fe-6cd63076200a
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA91XUW/bNhB+z69g9bCHIrEly5Zs9ykNsqzotq5Lgi0bBoOWTjZjmVRIyq5W5L/vSMmOpFpOiu6pChCL5N3x7vh9x9PnE0IcVShnSj7jKw50kQGOnHMpaeHg3OOpkdFC0xTnPTtSK5bhwLWDlK2ZNktuOWYa1sbg39ZgaRbFEgZp/LRRuRnTqd3tjyVqkYslxDGV5EqyNIXYjEEB2TK9NO9SFuQ3iTNyA4r8QN5SxVLH+FA+TrYUWuxDqSbr0e0ld1H+zPiqZsE6leLczS4LSoFuC7DYuBx4f/4UPXx4++Pd+d3FlXqfL8Qvd+9NxnbP4/7d5rB8HE0XT9kp53Y5qiQOeVw7mQM+t7y+5FoWLa9RpPTb/30TFw/X46E7zj9+XK2gYINgVfcbz/xgFP/UoohBRZJlmglukvG6dWSe672ekls8vBhSFjGRKxKVp0l5TBZCxOQhpynTBZlLoPEbsqYrIJHMebQsiOBEL4GIXCsWAzE6QkBhFPF/tcq4WXxDaIyrHKUl0VtBGF9IiBlwrUiCc5QkKd3gS2ZsvyLvjG2G/lAFp8Yrg6tsjysLL0IV6qktgCaRwHRSpYkWRtoitIzl1Do2NzA0ThiVlC2W+pRISNDgEl0hXGjo2VTMZmtaCM4pUzCbtWMUiQ3ZZsNsRaMlA/TETOapZmuqjbuSqaw4xUSkMfCzuRRbjoYXFWNKv2azHrkQYmX8SOmn0k3g96J4tTvnPSIb7DcAdFRGI0PKOiq/kLKSL2XRtbX4hB6rXKJxtRrMtyNx/2kYBs9zp9QZxjdjHc2DfHV1/W4xuCvyq8sP63oh2DnWJoITYXY1xOemXjkD1xufuaMzN7zx/Kk/ng4GPX/k/VW3lGdxl8LQm7pebzIOGgrAN0wKvkb4vSiHZUhrxBfIdopemt/L2p4HmVuvPxI2TJW0HdQIbVCOPleF7/87+4ua3YMIkBAxvHKe9TsVES0vC8T97fUeyFbRFCxbnhzGozTH6rRPvlOCYHcfPd1IBuq1m8+Y6UD/QUkrfeSEcLV+kxziwLMsaFXiev6OV/OGZBcbcPsjfBiE0+GoNwmHdXijyhFGdKl0c6I7s0d48VV57+DGsczWGGLbnd3jdHOkO46XI6SbKXucYO9w5KJu+NpBl6qfK0M61JPhXpyubVO2gQXlT/vtmoLyt2oGnHPbIX2n7Oro8Q6yq0xEEy9HbptwOvJ74fgr2OV3qHwv7PoGxOrdd8T1+1tvMHQJNnXizA+HyTiCCPwo9JJREsXRxJ+4/gRcN5lPgsZ1i1ywt0urF8+l+epx+n3svxagepFOqEG86nHQ/Xr30j8Mlr7ruhOIRoEbjIdzP0zwj86xWwyCYOx64aRf+Tx7kc+9+2zRbhNi0JSlzU+riuCK/WuC8ibD0A+b168pKiamL2K2F9uWxXppNN2B/aprPs4STJ+L6xhDa7X+7dCoNtauyfKvVX355sCb9bgMp3+fQaNI1r7CKk+rAoajx5PHk/8A9ZaBCgMPAAA=
+  recorded_at: Sun, 04 Oct 2020 23:57:18 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipes</title>
+  <link href="<%= url('/styles/bulma.min.css') %>" rel="stylesheet" type="text/css">
+  <link href="<%= url('/styles/recipes.css') %>" rel="stylesheet" type="text/css">
+</head>
+<body>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <a href="/" class="title">Recipes</a>
+      <h2 class="subtitle mt-4">
+        Find all the available recipes!
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section pt-0">
+  <div class="container">
+    <% flash.keys.each do |type| %>
+      <div class="column is-two-thirds  ">
+        <div class="notification is-<%= type %> is-two-thirds">
+          <button class="delete"></button>
+          <%= flash[type] %>
+        </div>
+      </div>
+    <% end %>
+    <%= yield %>
+  </div>
+</section>
+</body>
+</html>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    var $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.parentNode.removeChild($notification);
+    });
+  });
+});
+</script>

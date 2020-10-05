@@ -1,0 +1,30 @@
+<div class="columns is-mobile is-centered">
+  <div class="column is-three-quarters">
+    <div class="card">
+      <div class="card-image">
+        <figure class="image is-3by2">
+          <img src="<%= @recipe.photo_url %>">
+        </figure>
+      </div>
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content">
+            <p class="title is-4 mb-2"><%= @recipe.title %></p>
+            <div class="tags mt-4 ">
+              <% @recipe.tags.each do |tag| %>
+                <span class="tag"><%= tag %></span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <%= @recipe.description %>
+          <%if @recipe.chef_name%>
+            <p> A <%= @recipe.chef_name %> recipe!</p> 
+          <%end%>
+        </div>
+        <a href="/" class="button is-small is-text">Recipes list</a>
+      </div>
+    </div>
+  </div>
+</div>

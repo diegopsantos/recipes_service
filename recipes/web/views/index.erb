@@ -1,0 +1,33 @@
+<%if @result%>
+  <div class="columns">
+    <div class="column">
+      <% @recipes.each do |recipe| %>
+        <div class="column is-two-thirds">
+          <div class="card">
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <a class="title is-5" href="/<%= recipe.id %>"><%= recipe.title %></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-image">
+              <figure class="image is-3by2">
+                <a href="/show/<%= recipe.id %>">
+                  <img src="<%= recipe.photo_url %>">
+                </a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <%if @result[:skip] > 0%>
+        <a href="/?skip=<%= @result[:skip] - @result[:limit]%>" class="button is-small is-text">Previous Page</a>
+      <%end%>
+      <%if @result[:total] > @result[:skip] + @result[:limit] %>
+        <a href="/?skip=<%= @result[:skip] + @result[:limit]%>" class="button is-small is-text">Next Page</a>
+      <%end%>
+    </div>
+  </div>
+<%end%>
