@@ -6,6 +6,7 @@ services:
       context: ./recipes
     environment:
       CONTENTFUL_SPACE_ID:
-      CONTENTFUL_ACCESS_TOKEN:
+      CONTENTFUL_ACCESS_TOKEN: 
+      CONTENTFUL_SPACE:
     ports:
       - 3000:3000
