@@ -32,6 +32,7 @@ bundle install
 puma config.ru -C puma.rb
 ```
 
+After that just access http://localhost:3000/
 
 ## Running the test suit
 
