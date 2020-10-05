@@ -10,7 +10,8 @@ I decided to go for a simple sinatra app because of the size of the problem. I t
 
 ### Enviropment Variables
 
-Before running the app, we need to set up the env vars for contentful connection. DONT FORGET TO CHANGE IT TO YOUR REAL TOKEN
+Before running the app, we need to set up the env vars for contentful connection.
+Don't forget to change it for your real token
 
 ```sh
 echo 'CONTENTFUL_ACCESS_TOKEN = INSERT_YOUR_TOKEN_HERE' > recipes/.env
