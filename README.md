@@ -1,4 +1,4 @@
-# Marley Spoon Web Challenge - Contentful Recipe
+# Marley Spoon Web Challenge - Contentful Recipes
 
 This repository contains my resolution for the **Marley Spoon Web Challenge - Contentful Recipe**. The challenge instructions are found [here](https://gist.github.com/lawitschka/063f2e28bd6993cac5f8b40b991ae899).
 
