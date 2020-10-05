@@ -27,6 +27,7 @@ docker-compose up --build
 Just run it on your console:
 
 ```sh
+cd recipes
 bundle install
 puma config.ru -C puma.rb
 ```
